@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    android:background="#2F4F4F"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/mattsName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Matthew Shoemaker"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <TextView
+        android:id="@+id/mattsEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onEmailClick"
+        android:text="mattshoe81@gmail.com"
+        android:textColor="#01BF04"
+        android:textColorHighlight="#3366BB" />
+
+    <TextView
+        android:id="@+id/placeHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="   "
+        android:textSize="0.5sp" />
+
+    <TextView
+        android:id="@+id/adamsName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        android:text="Adam Lane"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <TextView
+        android:id="@+id/adamsEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onEmailClick"
+        android:text="alane019@gmail.com"
+        android:textColor="#01BF04" />
+
+    <View
+        android:id="@+id/dividerBar"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="16dp"
+        android:background="#708090" />
+
+</LinearLayout>

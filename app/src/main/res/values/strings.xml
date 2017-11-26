@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">ETH &#x25B2; Tracker</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="qtyHintFont"><font size="15">Enter Quantity Purchased</font></string>
+    <string name="priceHintFont"><font size="15">Enter Purchase Price</font></string>
+    <string name="hintColor">#ADD8E6</string>
+    <string name="mattsEmail">mattshoe81@gmail.com</string>
+    <string name ="adamsEmail">alane019@gmail.com</string>
+    <string name="emailSubject">EtherDelta Client Communication</string>
+    <string name="mattsBio">Thank you for downloading our app! I am Matthew Shoemaker (as you may have gathered by this point).
+        \n\nAs of the creation of this app (Summer 2017) I am enrolled as a student in The Ohio State University, majoring in Computer
+        Science and Engineering, and I have just completed my Freshman Year!\n\nDuring the project, I was in charge of doing the
+        coding and UI manipulation for the app! This is the very first app that I have ever created, so thank you for giving it a try!
+        \n\nWe are under no pretenses that this is a perfect app, so if you run into issues, please inform us and we will do absolutely
+        everything in our power to correct the issue!</string>
+    <string name="adamsBio">Coming Soon!</string>
+</resources>

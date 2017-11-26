@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2F4F4F"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.matts.delta_ether.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <TextView
+        android:id="@+id/sincePurchaseText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="0dp"
+        android:text="--"
+        android:textColor="@android:color/background_light"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView7"
+        app:layout_constraintLeft_toRightOf="@+id/textView7"
+        app:layout_constraintTop_toTopOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/priceLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Price:"
+        android:textColor="@color/colorHint"
+        android:textSize="35dp"
+        app:layout_constraintLeft_toLeftOf="@+id/deltaLogo"
+        app:layout_constraintRight_toRightOf="@+id/qtyPurchasedLabel"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/priceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="--"
+        android:textColor="@color/colorHint"
+        android:textSize="35dp"
+        app:layout_constraintBottom_toBottomOf="@+id/priceLabel"
+        app:layout_constraintLeft_toRightOf="@+id/priceLabel"
+        app:layout_constraintTop_toTopOf="@+id/priceLabel" />
+
+
+    <View
+        android:id="@+id/dividerBarTop"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        android:background="#708090"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/sourceLabelMain" />
+
+    <TextView
+        android:id="@+id/qtyPurchasedText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:onClick="openSettings"
+        android:text="--"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="@+id/qtyPurchasedLabel"
+        app:layout_constraintRight_toRightOf="@+id/qtyPurchasedLabel"
+        app:layout_constraintTop_toBottomOf="@+id/qtyPurchasedLabel" />
+
+    <TextView
+        android:id="@+id/purchasePriceLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="0dp"
+        android:text="Purchase Price:"
+        android:textColor="@android:color/background_light"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/qtyPurchasedLabel" />
+
+    <TextView
+        android:id="@+id/purchasePriceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:onClick="openSettings"
+        android:text="--"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="@+id/purchasePriceLabel"
+        app:layout_constraintRight_toRightOf="@+id/purchasePriceLabel"
+        app:layout_constraintTop_toBottomOf="@+id/purchasePriceLabel" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="ETH Investment Value:"
+        android:textColor="#01BF04"
+        android:textSize="25dp"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dividerBarTop" />
+
+    <TextView
+        android:id="@+id/currentTotalText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="--"
+        android:textColor="#01BF04"
+        android:textSize="40dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:clickable="true"
+        android:onClick="openSettings"
+        app:backgroundTint="@color/colorAccent"
+        app:elevation="20dp"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_manage" />
+
+    <ImageView
+        android:id="@+id/deltaLogo"
+        android:layout_width="151dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logodelta3needle" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="8dp"
+        android:text="--> Swipe from left!"
+        android:textColor="@color/colorHint"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/qtyPurchasedLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:text="Qty Purchased:"
+        android:textColor="@android:color/background_light"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deltaLogo" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="75dp"
+        android:layout_marginTop="8dp"
+        android:text="Growth:"
+        android:textColor="@android:color/background_light"
+        android:textSize="20dp"
+        app:layout_constraintRight_toRightOf="@+id/deltaLogo"
+        app:layout_constraintTop_toBottomOf="@+id/qtyPurchasedText" />
+
+    <TextView
+        android:id="@+id/sourceLabelMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="0dp"
+        android:text="Source:"
+        android:textColor="@android:color/background_light"
+        android:textSize="10dp"
+        app:layout_constraintLeft_toLeftOf="@+id/priceLabel"
+        app:layout_constraintTop_toBottomOf="@+id/priceLabel" />
+
+    <TextView
+        android:id="@+id/sourceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="0dp"
+        android:text="--"
+        android:textColor="@android:color/background_light"
+        android:textSize="10dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/sourceLabelMain"
+        app:layout_constraintLeft_toRightOf="@+id/sourceLabelMain"
+        app:layout_constraintTop_toTopOf="@+id/sourceLabelMain" />
+
+</android.support.constraint.ConstraintLayout>

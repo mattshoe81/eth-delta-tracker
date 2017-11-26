@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2F4F4F"
+    tools:context="com.example.matts.delta_ether.DonationActivity">
+
+    <ScrollView
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/donationHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Amount to Donate"
+                android:textColor="@android:color/holo_green_dark"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="0dp" />
+
+            <View
+                android:id="@+id/dividerBarTop"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginStart="16dp"
+                android:background="#708090"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/donationHeader" />
+
+            <RadioButton
+                android:id="@+id/donate1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="64dp"
+                android:layout_marginTop="16dp"
+                android:onClick="onRadioButtonClicked"
+                android:text="$1"
+                android:textColor="@android:color/background_light"
+                app:buttonTint="@android:color/background_light"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dividerBarTop" />
+
+            <RadioButton
+                android:id="@+id/donate5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="64dp"
+                android:layout_marginTop="0dp"
+                android:onClick="onRadioButtonClicked"
+                android:text="$5"
+                android:textColor="@android:color/background_light"
+                app:buttonTint="@android:color/background_light"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/donate1" />
+
+            <RadioButton
+                android:id="@+id/donate10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="16dp"
+                android:onClick="onRadioButtonClicked"
+                android:text="$10"
+                android:textColor="@android:color/background_light"
+                app:buttonTint="@android:color/background_light"
+                app:layout_constraintLeft_toLeftOf="@+id/donate1"
+                app:layout_constraintTop_toBottomOf="@+id/donate1" />
+
+            <RadioButton
+                android:id="@+id/donate15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:onClick="onRadioButtonClicked"
+                android:text="$15"
+                android:textColor="@android:color/background_light"
+                app:buttonTint="@android:color/background_light"
+                app:layout_constraintLeft_toLeftOf="@+id/donate5"
+                app:layout_constraintTop_toTopOf="@+id/donate10" />
+
+            <RadioButton
+                android:id="@+id/donate20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="16dp"
+                android:onClick="onRadioButtonClicked"
+                android:text="$20"
+                android:textColor="@android:color/background_light"
+                app:buttonTint="@android:color/background_light"
+                app:layout_constraintLeft_toLeftOf="@+id/donate10"
+                app:layout_constraintTop_toBottomOf="@+id/donate10" />
+
+            <RadioButton
+                android:id="@+id/donate25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:onClick="onRadioButtonClicked"
+                android:text="$25"
+                android:textColor="@android:color/background_light"
+                app:buttonTint="@android:color/background_light"
+                app:layout_constraintLeft_toLeftOf="@+id/donate15"
+                app:layout_constraintTop_toTopOf="@+id/donate20" />
+
+            <RadioButton
+                android:id="@+id/donate50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="16dp"
+                android:onClick="onRadioButtonClicked"
+                android:text="$50"
+                android:textColor="@android:color/background_light"
+                app:buttonTint="@android:color/background_light"
+                app:layout_constraintLeft_toLeftOf="@+id/donate20"
+                app:layout_constraintTop_toBottomOf="@+id/donate20" />
+
+            <RadioButton
+                android:id="@+id/donate100"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:onClick="onRadioButtonClicked"
+                android:text="$100"
+                android:textColor="@android:color/background_light"
+                app:buttonTint="@android:color/background_light"
+                app:layout_constraintLeft_toLeftOf="@+id/donate25"
+                app:layout_constraintTop_toTopOf="@+id/donate50" />
+
+            <View
+                android:id="@+id/dividerBarBottom"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginStart="16dp"
+                android:background="#708090"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/donate50" />
+
+            <TextView
+                android:id="@+id/totalDonationText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total:"
+                android:textColor="@android:color/background_light"
+                android:textSize="20dp"
+                android:layout_marginTop="32dp"
+                app:layout_constraintTop_toBottomOf="@+id/dividerBarBottom"
+                android:layout_marginLeft="0dp"
+                app:layout_constraintLeft_toLeftOf="@+id/button" />
+
+            <TextView
+                android:id="@+id/totalDonationAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="0dp"
+                android:text="--"
+                android:textColor="@android:color/background_light"
+                android:textSize="25dp"
+                app:layout_constraintBottom_toBottomOf="@+id/totalDonationText"
+                app:layout_constraintLeft_toRightOf="@+id/totalDonationText"
+                app:layout_constraintTop_toTopOf="@+id/totalDonationText" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="32dp"
+                android:background="@color/colorHint"
+                android:onClick="onDonateButtonClicked"
+                android:text="Donate!"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/totalDonationText" />
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
